@@ -1,0 +1,145 @@
+
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Contact Us</title>
+    <style>
+      body {
+        margin: 0;
+        padding: 0;
+        font-family: Arial, sans-serif;
+        background-color: #f2f2f2;
+      }
+
+      .navbar {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        background-color: #333;
+        color: white;
+        padding: 10px;
+      }
+
+      .navbar a {
+        color: white;
+        text-decoration: none;
+        margin-right: 10px;
+        padding: 5px;
+      }
+
+      .navbar a:hover {
+        background-color: white;
+        color: black;
+      }
+
+      .container {
+        margin: 50px auto;
+        max-width: 800px;
+        padding: 20px;
+        background-color: white;
+        border: 1px solid #ccc;
+        box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+      }
+
+      h1 {
+        font-size: 36px;
+        margin-bottom: 20px;
+      }
+
+      p {
+        font-size: 18px;
+        line-height: 1.5;
+        margin-bottom: 10px;
+      }
+
+      ul {
+        list-style: none;
+        margin: 0;
+        padding: 0;
+      }
+
+      li {
+        display: inline-block;
+        margin-right: 10px;
+      }
+      body {
+        font-family: Arial, sans-serif;
+        font-size: 16px;
+        color: #333;
+      }
+      .container {
+        max-width: 800px;
+        margin: 0 auto;
+        padding: 20px;
+      }
+      h1 {
+        font-size: 32px;
+        text-align: center;
+        margin-bottom: 20px;
+      }
+      form {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+      }
+      label {
+        font-size: 18px;
+        margin-bottom: 10px;
+      }
+      input[type="text"],
+      input[type="email"],
+      textarea {
+        width: 100%;
+        padding: 10px;
+        margin-bottom: 20px;
+        border-radius: 5px;
+        border: 1px solid #ccc;
+        box-sizing: border-box;
+        font-size: 16px;
+      }
+      textarea {
+        height: 200px;
+      }
+      input[type="submit"] {
+        background-color: #4CAF50;
+        color: white;
+        font-size: 18px;
+        padding: 10px 20px;
+        border: none;
+        border-radius: 5px;
+        cursor: pointer;
+        transition: background-color 0.3s ease;
+      }
+      input[type="submit"]:hover {
+        background-color: #3e8e41;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="navbar">
+      <a href="{% url 'home' %}">Home</a>
+      <div>
+        <a href="{% url 'works' %}">Our Works</a>
+        <a href="{% url 'about' %}">About</a>
+        <a href="{% url 'contact' %}">Contact</a>
+      </div>
+    </div>
+    <div class="container">
+      <h1>Contact Us</h1>
+      <p>If you're interested in having a Software Products created for you, please fill out the form below and we'll get back to you as soon as possible:</p>
+      <form method="post">
+        {% csrf_token %}
+        <label for="name">Name:</label>
+        <input type="text" name="name" id="name" required><br>
+        <label for="email">Email:</label>
+        <input type="email" name="email" id="email" required><br>
+        <label for="message">Message:</label>
+        <textarea name="message" id="message" required></textarea><br>
+        <input type = "checkbox" required>I Agree to Privacy Policy<br>
+        <input type="submit" value="Send">
+
+      </form>
+    </div>
+  </body>
+</html>

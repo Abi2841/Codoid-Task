@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Our Works</title>
+    <style>
+      .container {
+        max-width: 800px;
+        margin: auto;
+        padding: 20px;
+      }
+      h1 {
+        font-size: 36px;
+        text-align: center;
+        margin-bottom: 30px;
+      }
+      .project {
+        margin-bottom: 40px;
+      }
+      .project h2 {
+        font-size: 24px;
+        margin-bottom: 10px;
+      }
+      .project p {
+        font-size: 18px;
+        line-height: 1.5;
+        margin-bottom: 10px;
+      }
+      .project img {
+        max-width: 100%;
+        height: auto;
+        margin-bottom: 10px;
+      }
+    </style>
+  </head>
+  <!DOCTYPE html>
+<html>
+  <head>
+    <title>Home Page</title>
+    <style>
+      body {
+        margin: 0;
+        padding: 0;
+        font-family: Arial, sans-serif;
+        background-color: #f2f2f2;
+      }
+
+      .navbar {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        background-color: #333;
+        color: white;
+        padding: 10px;
+      }
+
+      .navbar a {
+        color: white;
+        text-decoration: none;
+        margin-right: 10px;
+        padding: 5px;
+      }
+
+      .navbar a:hover {
+        background-color: white;
+        color: black;
+      }
+
+      .container {
+        margin: 50px auto;
+        max-width: 800px;
+        padding: 20px;
+        background-color: white;
+        border: 1px solid #ccc;
+        box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+      }
+
+      h1 {
+        font-size: 36px;
+        margin-bottom: 20px;
+      }
+
+      p {
+        font-size: 18px;
+        line-height: 1.5;
+        margin-bottom: 10px;
+      }
+
+      ul {
+        list-style: none;
+        margin: 0;
+        padding: 0;
+      }
+
+      li {
+        display: inline-block;
+        margin-right: 10px;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="navbar">
+        <a href="{% url 'home' %}">Home</a>
+        <div>
+          <a href="{% url 'works' %}">Our Works</a>
+          <a href="{% url 'about' %}">About</a>
+          <a href="{% url 'contact' %}">Contact</a>
+        </div>
+      </div>
+    <div class="container">
+        <h1>Our Works</h1>
+        <div class="project">
+          <h1>Java Excel Library</h1>
+          <img src="https://cdn-cekmh.nitrocdn.com/SlrtebQxNZbUBkfXeRIcTgUmxZsOSldb/assets/images/optimized/rev-cf71704/wp-content/uploads/2022/11/Fillo.png" alt="Project 1">
+          <p>Fillo is an Excel API for Java and you can query xls & xlsx files. Now, it supports SELECT, UPDATE & INSERT queries with or without WHERE clause. You can also find a list of a list of previous releases and release notes</p>
+        </div>
+        <div class="project">
+          <h1>Selenium Grid UI</h1>
+          <img src="https://cdn-cekmh.nitrocdn.com/SlrtebQxNZbUBkfXeRIcTgUmxZsOSldb/assets/images/optimized/rev-cf71704/wp-content/uploads/2022/11/VisGrid-Selenium-Grid-UI.png" alt="Project 2">
+          <p>VisGrid is a GUI for Selenium Grid. You can start Selenium grid hub, create and attach nodes very easily and quickly. You can also find a list of a list of previous releases and release notes</p>
+        </div>
+        <div class="project">
+          <h1>Robotil</h1>
+          <img src="https://cdn-cekmh.nitrocdn.com/SlrtebQxNZbUBkfXeRIcTgUmxZsOSldb/assets/images/optimized/rev-cf71704/wp-content/uploads/2022/11/Robotil-Tool.png" alt="Project 3">
+          <p>Robotil is a simple library to press/release keyboard keys, click coordinates, take screen-shot and invoke application on remote machine.</p>
+        </div>
+        <div class="home-button">
+          <a href="{% url 'home' %}">Home</a>
+        </div>
+
+      </div>
+      
+      <style>
+        .container {
+          max-width: 800px;
+          margin: auto;
+          padding: 20px;
+        }
+        h1 {
+          font-size: 36px;
+          text-align: center;
+          margin-bottom: 30px;
+        }
+        .project {
+          margin-bottom: 40px;
+        }
+        .project h2 {
+          font-size: 24px;
+          margin-bottom: 10px;
+        }
+        .project p {
+          font-size: 18px;
+          line-height: 1.5;
+          margin-bottom: 10px;
+        }
+        .project img {
+          max-width: 100%;
+          height: auto;
+          margin-bottom: 10px;
+        }
+        .home-button {
+          text-align: center;
+          margin-top: 50px;
+        }
+        .home-button a {
+          display: inline-block;
+          padding: 10px 20px;
+          background-color: #333;
+          color: #fff;
+          text-decoration: none;
+          border-radius: 5px;
+          font-size: 18px;
+        }
+        .home-button a:hover {
+          background-color: #666;
+        }
+      </style>
+      
+</html>

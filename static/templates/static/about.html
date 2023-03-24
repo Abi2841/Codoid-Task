@@ -1,0 +1,85 @@
+
+
+
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>About Us</title>
+    <style>
+      body {
+        margin: 0;
+        padding: 0;
+        font-family: Arial, sans-serif;
+        background-color: #f2f2f2;
+      }
+
+      .navbar {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        background-color: #333;
+        color: white;
+        padding: 10px;
+      }
+
+      .navbar a {
+        color: white;
+        text-decoration: none;
+        margin-right: 10px;
+        padding: 5px;
+      }
+
+      .navbar a:hover {
+        background-color: white;
+        color: black;
+      }
+
+      .container {
+        margin: 50px auto;
+        max-width: 800px;
+        padding: 20px;
+        background-color: white;
+        border: 1px solid #ccc;
+        box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+      }
+
+      h1 {
+        font-size: 36px;
+        margin-bottom: 20px;
+      }
+
+      p {
+        font-size: 18px;
+        line-height: 1.5;
+        margin-bottom: 10px;
+      }
+
+      ul {
+        list-style: none;
+        margin: 0;
+        padding: 0;
+      }
+
+      li {
+        display: inline-block;
+        margin-right: 10px;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="navbar">
+      <a href="{% url 'home' %}">Home</a>
+      <div>
+        <a href="{% url 'works' %}">Our Works</a>
+        <a href="{% url 'about' %}">About</a>
+        <a href="{% url 'contact' %}">Contact</a>
+      </div>
+    </div>
+    <div class="container">
+        <h1>About Us</h1>
+        <p>We are a small company that specializes in creating Products for our clients.Starting as a QA company in 2012, we have grown to become the trusted QA partner for various Fortune 500 and startup companies alike. We are now on the mission to become the best technology company on a global scale by developing resourceful apps, assessing their quality, communicating effectively with everyone, and focusing on the self-improvement of both our employees and the company.</p>
+        <p>If you're interested in Developing a software products for your business or your firm, please feel free to contact us using the form on the <a href="{% url 'contact' %}">Contact</a> page.</p>
+      </div>
+    </div>
+  </body>
+</html>
